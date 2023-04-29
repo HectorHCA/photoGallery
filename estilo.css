@@ -186,6 +186,8 @@ h3{
 
 }
 
+
+
 img{
 
     size: 100%;
@@ -243,6 +245,30 @@ img{
 
 
 }
+
+
+#overlayH img{
+
+
+  size: 100%;
+
+
+
+}
+
+
+
+#overlayV img{
+
+
+  size: 100%;
+
+
+
+}
+
+
+
 
 
 .column img:hover{
@@ -373,6 +399,7 @@ img.zoom {
     height: 100%;
     background-color: rgba(255, 255, 255);
     display: none;
+    
   }
 
 

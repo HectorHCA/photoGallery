@@ -1,5 +1,4 @@
-
- src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
 
     $(document).ready(function(){
         $('.zoom').hover(function() {
@@ -9,11 +8,6 @@
         });
     });
 
-    
-
-
-
-
 
 
 
@@ -22,10 +16,6 @@
         e.state.isHistoryEnabled && (t.preventDefault(), history.pushState({}, "", t.currentTarget.href))
             }
 
-
-    
-
-           
             function openOverlayH(imageUrl) {
                 var overlay = document.getElementById('overlayH');
                 var overlayImage = document.getElementById('overlayImageH');
@@ -79,21 +69,14 @@
 
 
 
+
+
             function abrirSubmenu(){
 
 
                 var submenu = document.getElementById('sub');
 
                 submenu.style.display = "block";
-
-
-
-
-
-
-
-
-
 
 
             }
@@ -107,13 +90,10 @@
                 submenu.style.display = "none";
 
 
-
-
-
-
             }
 
 
-        
+            
 
+    
 

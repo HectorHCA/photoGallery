@@ -1,20 +1,3 @@
-src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
-
-    $(document).ready(function(){
-        $('.zoom').hover(function() {
-            $(this).addClass('transition');
-        }, function() {
-            $(this).removeClass('transition');
-        });
-    });
-
-
-
-
-
-        function a(t) {
-        e.state.isHistoryEnabled && (t.preventDefault(), history.pushState({}, "", t.currentTarget.href))
-            }
 
             function openOverlayH(imageUrl) {
                 var overlay = document.getElementById('overlayH');

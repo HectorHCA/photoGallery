@@ -23,7 +23,9 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
             
                 overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
                     overlay.style.display = 'block';
+                    /*
                     document.body.style.overflow = 'hidden';
+                */
                 }
                 
                 overlayImage.src = imageUrl;
@@ -48,7 +50,9 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
             
                 overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
                     overlay.style.display = 'block';
+                    /*
                     document.body.style.overflow = 'hidden';
+                    */
                 }
                 
                 overlayImage.src = imageUrl;

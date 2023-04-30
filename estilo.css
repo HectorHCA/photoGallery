@@ -279,11 +279,6 @@ img{
 }
 
 
-a:active, button:active {
-  background-color: transparent; /* o el mismo color que el fondo normal */
-}
-
-
 
 
 
@@ -375,17 +370,6 @@ img.zoom {
 
 
 }
-
-
-.listaMenuMoviles>li:active{
-
-  background-color: transparent; /* o el mismo color que el fondo normal */
-
-}
-
-
-
-
 
 .listaMenuMoviles>li:active{
 

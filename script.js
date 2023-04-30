@@ -1,14 +1,15 @@
 
+
             function openOverlayH(imageUrl) {
+
+                console.log("abriendo foto HORIZONTAL");
                 var overlay = document.getElementById('overlayH');
                 var overlayImage = document.getElementById('overlayImageH');
                 var closeButton = document.getElementById('closeButton');
             
                 overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
                     overlay.style.display = 'block';
-                    /*
                     document.body.style.overflow = 'hidden';
-                */
                 }
                 
                 overlayImage.src = imageUrl;
@@ -27,15 +28,18 @@
 
 
             function openOverlayV(imageUrl) {
+                console.log("abriendo foto VERTICAL");
                 var overlay = document.getElementById('overlayV');
                 var overlayImage = document.getElementById('overlayImageV');
                 var closeButton = document.getElementById('closeButton');
             
+                
                 overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
                     overlay.style.display = 'block';
                     /*
                     document.body.style.overflow = 'hidden';
-                    */
+                */
+               
                 }
                 
                 overlayImage.src = imageUrl;
@@ -50,6 +54,9 @@
                     document.body.style.overflow = 'auto';
                 }                
             }
+
+
+            
             
 
 
@@ -78,6 +85,41 @@
 
 
             }
+
+
+
+
+
+            function abrirSubmenuSocial(){
+                
+                let social =  document.getElementById("submenuSocial");
+                social.style.display = "block";
+
+                let menuPadre =  document.getElementsByClassName("listaMoviles");
+
+
+
+            }
+
+
+            const cerrarSubmenuSocial = () => {
+
+
+                let social =  document.getElementById("submenuSocial");
+                social.style.display = "none";
+ 
+
+
+
+
+
+
+
+
+            }
+
+
+              
 
 
             

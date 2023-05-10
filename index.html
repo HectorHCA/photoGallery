@@ -1,156 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" id="todo">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">  
+    <link rel="stylesheet" href="estilo.css">
     <script src="./script.js"></script>
     <title>NeriJuarezFotografía</title>
 
-   
+
 
 </head>
+
 <body id="cuerpo">
     <header>
 
         <div class="teknofilos">
-            <a class="logo" href="index.html"><img src="logo.png" onmouseover="cerrarSubMenu()"></a>
+            <a class="logo" href="index.html"><img src="logo.png"></a>
 
         </div>
 
 
 
-        <nav class="menu header1">
-
-
-            <a class="m" href="#" onmouseover="abrirSubmenu()">SOCIAL</a>
-            <a class="m" href="#" onmouseover="cerrarSubMenu()">GASTRONOMÍA</a>
-            <a class="m" href="#" onmouseover="cerrarSubMenu()">PRODUCTO</a>
-            <a class="m" href="form.html" onmouseover="cerrarSubMenu()">CONTACTO</a>
-
-        </nav>
 
 
 
-        <nav id="menuMoviles">
-
-            <ul class="listaMenuMoviles" id="mm">   
-                <li class="listaMoviles" onclick="abrirSubmenuSocial()">SOCIAL
-                    <ul class="listaMenuMoviles" id="submenuSocial">
-                        <li>BODA</li>
-                        <li>COMUNIÓN</li>
-                        <li>BAUTIZO</li>
-                        <li>FAMILIA</li>
-                    </ul>
-
-
-                </li>
-                <li class="listaMoviles" onclick="cerrarSubmenuSocial()">GASTRONOMÍA</li>
-                <li class="listaMoviles" onclick="cerrarSubmenuSocial()">PRODUCTO</li>
-                <li class="listaMoviles"   onclick="cerrarSubmenuSocial()">CONTACTO</li>
 
 
 
+
+
+        <ul class="listaMenuMoviles">
+            <li class="submovil" onclick="abrirSubmenuSocial()">SOCIAL</li>
+            <ul class="listaMenuMoviles" id="submenuSocial">
+                <li class="subsub">BODA</li>
+                <li class="subsub">COMUNIÓN</li>
+                <li class="subsub">BAUTIZO</li>
+                <li class="subsub">FAMILIA</li>
             </ul>
+            <li class="submovil" onclick="cerrarSubmenuSocial()">GASTRONOMÍA</li>
+            <li class="submovil" onclick="cerrarSubmenuSocial()">PRODUCTO</li>
+            <li class="submovil" onclick="cerrarSubmenuSocial()">CONTACTO</li>
+        </ul>
 
 
 
+
+
+        <nav>
+            <ul class="list">
+                <li class="link" onclick="abrirSubmenu()"><a href="#">SOCIAL</a></li>
+                <li class="link" onclick="cerrarSubMenu()"><a href="#">GASTRONOMÍA</a></li>
+                <li class="link" onclick="cerrarSubMenu()"><a href="#">PRODUCTO</a></li>
+                <li class="link" onclick="cerrarSubMenu()"><a href="#">CONTACTO</a></li>
+            </ul>
         </nav>
+
+
+
+        <nav class="submenu" id="sub" onmouseover="abrirSubmenu()">
+            <ul class="lista">
+                <li>
+                    <a class="link linksub" href="boda.html">BODA</a>
+                </li>
+                <li>
+                    <a class="link linksub" href="#">BAUTIZO</a>
+                </li>
+                <li>
+                    <a class="link linksub" href="#">COMUNIÓN</a>
+                </li>
+                <li>
+                    <a class="link linksub" href="#">FAMILIA</a>
+                </li>
+            </ul>
+        </nav>
+
 
 
 
     </header>
 
-  
-        <nav class="submenu" id="sub" onmouseover="abrirSubmenu()">     
-            <ul class="lista">
-                <li>            
-                    <a class="sm" href="boda.html">BODA</a>
-                </li>
-                <li>            
-                    <a class="sm" href="#">BAUTIZO</a>
-                </li>
-                <li>            
-                    <a class="sm" href="#">COMUNIÓN</a>
-                </li>
-                <li>            
-                    <a class="sm" href="#">FAMILIA</a>
-                </li>
-            </ul>
 
-        </nav>
 
-        <div id="overlayH">
-            <img id="overlayImageH" src="1.jpg">
-            <span id="closeButton">&times;</span>
-            <img src="logo.png" class="imagenLogo">
+
+    <div id="overlayH">
+        <img id="overlayImageH" src="1.jpg">
+        <span id="closeButton">&times;</span>
+        <img src="logo.png" class="imagenLogo">
+    </div>
+
+
+    <div id="overlayV">
+        <img id="overlayImageV" src="1.jpg">
+        <span id="closeButton">&times;</span>
+        <img src="logo.png" class="imagenLogo">
+    </div>
+
+
+
+
+    <div class="row">
+
+        <div class="column">
+
+
+
+
+            <img alt="f1" src="miniaturas/1.jpg" onclick="openOverlayV('1.jpg')">
+            <img alt="f2" src="45.jpg" onclick="openOverlayH('45.jpg')">
+            <img alt="f3" src="miniaturas/2.jpg" onclick="openOverlayV('2.jpg')">
+            <img alt="f4" src="4.jpg" onclick="openOverlayH('4.jpg')">
+            <img alt="f5" src="miniaturas/23.jpg" onclick="openOverlayV('23.jpg')">
+
+
+        </div>
+
+        <div class="column">
+            <img alt="f6" src="miniaturas/12.jpg" onclick="openOverlayH('12.jpg')">
+            <img alt="f7" src="miniaturas/41.jpg" onclick="openOverlayV('41.jpg')">
+            <img alt="f8" src="8.jpg" onclick="openOverlayH('8.jpg')">
+            <img alt="f9" src="miniaturas/13.jpg" onclick="openOverlayH('13.jpg')">
+            <img alt="f13" src="miniaturas/10.jpg" onclick="openOverlayH('10.jpg')">
+            <img alt="f9" src="miniaturas/22.jpg" onclick="openOverlayV('22.jpg')">
+            <img alt="f39" src="39.jpg" onclick="openOverlayH('39.jpg')">
+
+
+
+
         </div>
 
 
-        <div id="overlayV">
-            <img id="overlayImageV" src="1.jpg">
-            <span id="closeButton">&times;</span>
-            <img src="logo.png" class="imagenLogo">
+        <div class="column">
+            <img alt="f11" src="17.jpg" onclick="openOverlayV('17.jpg')">
+            <img alt="f12" src="miniaturas/18.jpg" onclick="openOverlayV('18.jpg')">
+            <img alt="f10" src="19.jpg" onclick="openOverlayV('19.jpg')">
+            <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
+            <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
+
+
+
+
         </div>
 
-
-
-        <div class="row">
-
-            <div class="column">
-
-
-          
-                  
-                <img  alt="f1" src="miniaturas/1.jpg" onclick="openOverlayV('1.jpg')">
-                <img  alt="f2" src="45.jpg" onclick="openOverlayH('45.jpg')">
-                <img  alt="f3" src="miniaturas/2.jpg" onclick="openOverlayV('2.jpg')">
-                <img  alt="f4" src="4.jpg" onclick="openOverlayH('4.jpg')">
-                <img  alt="f5" src="miniaturas/23.jpg" onclick="openOverlayV('23.jpg')">
-        
-
-            </div>
-
-            <div class="column">
-                <img alt="f6" src="miniaturas/12.jpg" onclick="openOverlayH('12.jpg')">
-                <img alt="f7" src="miniaturas/41.jpg" onclick="openOverlayV('41.jpg')">
-                <img alt="f8" src="8.jpg" onclick="openOverlayH('8.jpg')">
-                <img alt="f9" src="miniaturas/13.jpg" onclick="openOverlayH('13.jpg')">
-                <img alt="f13" src="miniaturas/10.jpg" onclick="openOverlayH('10.jpg')">
-                <img alt="f9" src="miniaturas/22.jpg" onclick="openOverlayV('22.jpg')">
-                <img alt="f39" src="39.jpg" onclick="openOverlayH('39.jpg')">
+        <div class="column">
+            <img alt="f17" src="26.jpg" onclick="openOverlayH('26.jpg')">
+            <img alt="f18" src="miniaturas/27.jpg" onclick="openOverlayH('27.jpg')">
+            <img alt="f19" src="miniaturas/28.jpg" onclick="openOverlayH('28.jpg')">
+            <img alt="f20" src="miniaturas/29.jpg" onclick="openOverlayH('29.jpg')">
+            <img alt="f31" src="miniaturas/31.jpg" onclick="openOverlayV('31.jpg')">
+            <img alt="f14" src="20.jpg" onclick="openOverlayH('20.jpg')">
 
 
 
-
-            </div>
-
-
-            <div class="column">
-                <img alt="f11" src="17.jpg" onclick="openOverlayV('17.jpg')">
-                <img alt="f12" src="miniaturas/18.jpg" onclick="openOverlayV('18.jpg')">
-                <img alt="f10" src="19.jpg" onclick="openOverlayV('19.jpg')">
-                <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
-                <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
-
-            
-
-
-            </div>
-
-            <div class="column">
-                <img alt="f17" src="26.jpg" onclick="openOverlayH('26.jpg')">
-                <img alt="f18" src="miniaturas/27.jpg" onclick="openOverlayH('27.jpg')">
-                <img alt="f19" src="miniaturas/28.jpg" onclick="openOverlayH('28.jpg')">
-                <img alt="f20" src="miniaturas/29.jpg" onclick="openOverlayH('29.jpg')">
-                <img alt="f31" src="miniaturas/31.jpg" onclick="openOverlayV('31.jpg')">
-                <img alt="f14" src="20.jpg" onclick="openOverlayH('20.jpg')">
-
-
-
-            </div>
-            <!--
+        </div>
+        <!--
             <div>
                 <a class="subir" href="#todo">↑</a>
             </div>
@@ -166,7 +170,16 @@
 
 
 
-        </div>
+
+    </div>
+
+
+
+    <svg class="irArriba" onclick="irArriba()" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+        fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg>
 
 
 
@@ -174,22 +187,40 @@
 
 
 
-<footer>
-    <div>
-        <!--
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <!--
         <a class="logo" href="https://instagram.com/neri_ig?igshid=YmMyMTA2M2Y="><img id="imagenLogo" src="logoInstagram.png"></a>
         -->
 
 
 
-        <a id="enlaceInstagram" class="logo" href="http://instagram.com/_u/neri_ig/"><img id="imagenLogo" src="logoInstagram.png"></a>
+
+            <a id="enlaceInstagram" class="logo" href="http://instagram.com/_u/neri_ig/"><img id="imagenLogo"
+                    src="logoInstagram.png"></a>
+
+
+        </div>
+    </footer>
 
 
 
-    </div>
-</footer>
-
-
-    
 </body>
+
 </html>

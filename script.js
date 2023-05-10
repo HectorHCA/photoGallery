@@ -1,128 +1,208 @@
 
 
-            function openOverlayH(imageUrl) {
+function openOverlayH(imageUrl) {
 
-                console.log("abriendo foto HORIZONTAL");
-                var overlay = document.getElementById('overlayH');
-                var overlayImage = document.getElementById('overlayImageH');
-                var closeButton = document.getElementById('closeButton');
-            
-                overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
-                    overlay.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
-                }
-                
-                overlayImage.src = imageUrl;
-            
-                closeButton.onclick = function() {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-                
-                overlay.onclick = function() {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }                
-            }
-            
+    console.log("abriendo foto HORIZONTAL");
+    var overlay = document.getElementById('overlayH');
+    var overlayImage = document.getElementById('overlayImageH');
+    var closeButton = document.getElementById('closeButton');
 
+    overlayImage.onload = function () {  // agregar evento load a la imagen del overlay
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
-            function openOverlayV(imageUrl) {
-                console.log("abriendo foto VERTICAL");
-                var overlay = document.getElementById('overlayV');
-                var overlayImage = document.getElementById('overlayImageV');
-                var closeButton = document.getElementById('closeButton');
-            
-                
-                overlayImage.onload = function() {  // agregar evento load a la imagen del overlay
-                    overlay.style.display = 'block';
-                    /*
-                    document.body.style.overflow = 'hidden';
-                */
-               
-                }
-                
-                overlayImage.src = imageUrl;
-            
-                closeButton.onclick = function() {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-                
-                overlay.onclick = function() {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }                
-            }
+    overlayImage.src = imageUrl;
+
+    closeButton.onclick = function () {
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    overlay.onclick = function () {
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
 
 
-            
-            
+
+function openOverlayV(imageUrl) {
+    console.log("abriendo foto VERTICAL");
+    var overlay = document.getElementById('overlayV');
+    var overlayImage = document.getElementById('overlayImageV');
+    var closeButton = document.getElementById('closeButton');
 
 
+    overlayImage.onload = function () {  // agregar evento load a la imagen del overlay
+        overlay.style.display = 'block';
+        /*
+        document.body.style.overflow = 'hidden';
+    */
+
+    }
+
+    overlayImage.src = imageUrl;
+
+    closeButton.onclick = function () {
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    overlay.onclick = function () {
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
+
+/*  ESTE SIVE PARA CERRAR EL OVERLAY SOLO EN CASO DE PULSAR EL BOTON DE CERRADO , EN EL RESTO DE CASOS NO SE CIERRA
 
 
 
 
+function openOverlayH(imageUrl) {
+    console.log("abriendo foto HORIZONTAL");
+    var overlay = document.getElementById('overlayH');
+    var overlayImage = document.getElementById('overlayImageH');
+    var closeButton = document.getElementById('closeButtonH');
 
-            function abrirSubmenu(){
+    overlayImage.onload = function () {
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
+    overlayImage.src = imageUrl;
 
-                var submenu = document.getElementById('sub');
+    closeButton.onclick = function (event) {
+        event.stopPropagation(); // Evita que el evento se propague a elementos padre
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
 
-                submenu.style.display = "block";
+function openOverlayV(imageUrl) {
+    console.log("abriendo foto VERTICAL");
+    var overlay = document.getElementById('overlayV');
+    var overlayImage = document.getElementById('overlayImageV');
+    var closeButton = document.getElementById('closeButtonV');
 
+    overlayImage.onload = function () {
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
-            }
+    overlayImage.src = imageUrl;
 
+    closeButton.onclick = function (event) {
+        event.stopPropagation(); // Evita que el evento se propague a elementos padre
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
 
-            function cerrarSubMenu(){
+document.addEventListener('click', function (event) {
+    var overlayH = document.getElementById('overlayH');
+    var overlayV = document.getElementById('overlayV');
 
-
-                var submenu = document.getElementById('sub');
-
-                submenu.style.display = "none";
-
-
-            }
-
-
-
-
-
-            function abrirSubmenuSocial(){
-                
-                let social =  document.getElementById("submenuSocial");
-                social.style.display = "block";
-
-                let menuPadre =  document.getElementsByClassName("listaMoviles");
-
-
-
-            }
-
-
-            const cerrarSubmenuSocial = () => {
-
-
-                let social =  document.getElementById("submenuSocial");
-                social.style.display = "none";
- 
-
-
-
-
-
-
-
-
-            }
+    if (event.target !== overlayH && event.target !== overlayV) {
+        overlayH.style.display = 'none';
+        overlayV.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
 
 
-              
+
+*/
 
 
-            
 
-    
+
+
+
+
+
+
+
+
+
+
+function abrirSubmenu() {
+
+
+    var submenu = document.getElementById('sub');
+
+    submenu.style.display = "block";
+
+
+}
+
+
+function cerrarSubMenu() {
+
+
+    var submenu = document.getElementById('sub');
+
+    submenu.style.display = "none";
+
+
+
+}
+
+
+
+
+
+function abrirSubmenuSocial() {
+
+    let social = document.getElementById("submenuSocial");
+    social.style.display = "block";
+
+
+
+
+}
+
+
+const cerrarSubmenuSocial = () => {
+
+
+    let social = document.getElementById("submenuSocial");
+    social.style.display = "none";
+
+
+
+
+
+
+
+
+
+}
+
+
+
+function irArriba() {
+
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
+}
+
+
+
+$('.social').click(function () {
+    $('.submenu').toggleClass('open');
+    $('.row').toggleClass('open');
+});
+
+
+
+
+
+
+
 

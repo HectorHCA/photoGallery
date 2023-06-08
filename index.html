@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/a5dbac55d8.js" crossorigin="anonymous"></script>   
+     <link rel="stylesheet" href="estilo.css">
+    
     <script src="./script.js"></script>
     <title>NeriJuarezFotografía</title>
 
@@ -13,14 +15,41 @@
 
 </head>
 
+
+
+
 <body id="cuerpo">
     <header>
 
         <div class="teknofilos">
             <a class="logo" href="index.html"><img src="logo.png"></a>
 
+
+
+
+            
+
         </div>
 
+
+
+        <div class="toggles">
+
+            <div>
+                <img class="corazon" src="heart-regular.svg" alt="Corazon">
+                <img class="camara" src="camera-solid.svg" alt="Camara">
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
 
 
 
@@ -53,7 +82,7 @@
                 <li class="link" onclick="abrirSubmenu()"><a href="#">SOCIAL</a></li>
                 <li class="link" onclick="cerrarSubMenu()"><a href="#">GASTRONOMÍA</a></li>
                 <li class="link" onclick="cerrarSubMenu()"><a href="#">PRODUCTO</a></li>
-                <li class="link" onclick="cerrarSubMenu()"><a href="#">CONTACTO</a></li>
+                <li class="link" onclick="cerrarSubMenu()"><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
 
@@ -78,8 +107,15 @@
 
 
 
+            
+
+
+
+
 
     </header>
+
+
 
 
 
@@ -100,56 +136,60 @@
 
 
 
-    <div class="row">
+
+
+
+
+    <div class="row" id="fotos">
 
         <div class="column">
 
 
 
 
-            <img alt="f1" src="miniaturas/1.jpg" onclick="openOverlayV('1.jpg')">
-            <img alt="f2" src="45.jpg" onclick="openOverlayH('45.jpg')">
-            <img alt="f3" src="miniaturas/2.jpg" onclick="openOverlayV('2.jpg')">
-            <img alt="f4" src="48.jpg" onclick="openOverlayH('48.jpg')">
-            <img alt="f5" src="miniaturas/23.jpg" onclick="openOverlayV('23.jpg')">
+            <img alt="surfero"              src="fotosRedimensionadas/1.jpg" onclick="openOverlayV('fotosRedimensionadas/1.jpg')">
+            <img alt="familia puest de sol" src="fotosRedimensionadas/45.jpg" onclick="openOverlayH('fotosRedimensionadas/45.jpg')">
+            <img alt="surfero"              src="fotosRedimensionadas/2.jpg" onclick="openOverlayV('fotosRedimensionadas/2.jpg')">
+            <img alt="surfero surfeando"    src="fotosRedimensionadas/4.jpg" onclick="openOverlayH('fotosRedimensionadas/4.jpg')">
+            <img alt="comunion"             src="fotosRedimensionadas/23.jpg" onclick="openOverlayV('fotosRedimensionadas/23.jpg')">
 
 
         </div>
 
         <div class="column">
-            <img alt="f6" src="miniaturas/12.jpg" onclick="openOverlayH('12.jpg')">
-            <img alt="f7" src="miniaturas/41.jpg" onclick="openOverlayV('41.jpg')">
-            <img alt="f8" src="8.jpg" onclick="openOverlayH('8.jpg')">
-            <img alt="f9" src="miniaturas/13.jpg" onclick="openOverlayH('13.jpg')">
-            <img alt="f13" src="miniaturas/10.jpg" onclick="openOverlayH('10.jpg')">
-            <img alt="f9" src="miniaturas/22.jpg" onclick="openOverlayV('22.jpg')">
-            <img alt="f39" src="39.jpg" onclick="openOverlayH('39.jpg')">
-
-
-
-
-        </div>
-
-
-        <div class="column">
-            <img alt="f11" src="17.jpg" onclick="openOverlayV('17.jpg')">
-            <img alt="f12" src="miniaturas/18.jpg" onclick="openOverlayV('18.jpg')">
-            <img alt="f10" src="19.jpg" onclick="openOverlayV('19.jpg')">
-            <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
-            <img alt="f14" src="miniaturas/20.jpg" onclick="openOverlayH('20.jpg')">
+            <img alt="surfero surfeando"    src="fotosRedimensionadas/12.jpg" onclick="openOverlayH('fotosRedimensionadas/12.jpg')">
+            <img alt="bebé"                 src="fotosRedimensionadas/41.jpg" onclick="openOverlayV('fotosRedimensionadas/41.jpg')">
+            <img alt="mano"                 src="fotosRedimensionadas/8.jpg" onclick="openOverlayH('fotosRedimensionadas/8.jpg')">
+            <img alt="familia junto al mar" src="fotosRedimensionadas/13.jpg" onclick="openOverlayH('fotosRedimensionadas/13.jpg')">
+            <img alt="surfero"              src="fotosRedimensionadas/10.jpg" onclick="openOverlayH('fotosRedimensionadas/10.jpg')">
+            <img alt="comunión"             src="fotosRedimensionadas/22.jpg" onclick="openOverlayV('fotosRedimensionadas/22.jpg')">
+            <img alt="embarazada"           src="fotosRedimensionadas/39.jpg" onclick="openOverlayH('fotosRedimensionadas/39.jpg')">
 
 
 
 
         </div>
 
+
         <div class="column">
-            <img alt="f17" src="26.jpg" onclick="openOverlayH('26.jpg')">
-            <img alt="f18" src="miniaturas/27.jpg" onclick="openOverlayH('27.jpg')">
-            <img alt="f19" src="miniaturas/28.jpg" onclick="openOverlayH('28.jpg')">
-            <img alt="f20" src="miniaturas/29.jpg" onclick="openOverlayH('29.jpg')">
-            <img alt="f31" src="miniaturas/31.jpg" onclick="openOverlayV('31.jpg')">
-            <img alt="f14" src="20.jpg" onclick="openOverlayH('20.jpg')">
+            <img alt="madre e hijo" src="fotosRedimensionadas/17.jpg" onclick="openOverlayV('fotosRedimensionadas/17.jpg')">
+            <img alt="madre e hijo" src="fotosRedimensionadas/18.jpg" onclick="openOverlayV('fotosRedimensionadas/18.jpg')">
+            <img alt="bebé"         src="fotosRedimensionadas/18.JPG" onclick="openOverlayV('fotosRedimensionadas/18.JPG')">
+            <img alt="bebé"         src="fotosRedimensionadas/20.jpg" onclick="openOverlayH('fotosRedimensionadas/20.jpg')">
+            <img alt="f14"          src="fotosRedimensionadas/20.jpg" onclick="openOverlayH('fotosRedimensionadas/20.jpg')">
+
+
+
+
+        </div>
+
+        <div class="column">
+            <img alt="comunión" src="fotosRedimensionadas/26.jpg" onclick="openOverlayH('fotosRedimensionadas/26.jpg')">
+            <img alt="bautizo"  src="fotosRedimensionadas/27.jpg" onclick="openOverlayH('fotosRedimensionadas/27.jpg')">
+            <img alt="familia"  src="fotosRedimensionadas/28.jpg" onclick="openOverlayH('fotosRedimensionadas/28.jpg')">
+            <img alt="bautizo"  src="fotosRedimensionadas/29.jpg" onclick="openOverlayH('fotosRedimensionadas/29.jpg')">
+            <img alt="familia"  src="fotosRedimensionadas/31.jpg" onclick="openOverlayV('fotosRedimensionadas/31.jpg')">
+            <img alt="bebé"     src="fotosRedimensionadas/20.jpg" onclick="openOverlayH('fotosRedimensionadas/20.jpg')">
 
 
 

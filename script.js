@@ -126,30 +126,25 @@ document.addEventListener('click', function (event) {
 
 
 
-
-
-
 function abrirSubmenu() {
-
-
     var submenu = document.getElementById('sub');
-
-    submenu.style.display = "block";
-
-
-}
-
-
-function cerrarSubMenu() {
-
-
+    var fotos = document.getElementById('fotos');
+    var submenuHeight = submenu.offsetHeight;
+  
+    submenu.classList.add('visible'); // Agrega la clase "visible" para mostrar el submenú
+    fotos.style.transform = "translateY(45px)"; // Desplaza el .row hacia abajo
+  }
+  
+  function cerrarSubMenu() {
     var submenu = document.getElementById('sub');
+    var fotos = document.getElementById('fotos');
+    
+  
+    submenu.classList.remove('visible'); // Quita la clase "visible" para ocultar el submenú
+    fotos.style.transform = "translateY(0)"; // Reinicia la posición del .row
 
-    submenu.style.display = "none";
-
-
-
-}
+  }
+  
 
 
 
@@ -193,16 +188,9 @@ function irArriba() {
 }
 
 
-
+/*
 $('.social').click(function () {
     $('.submenu').toggleClass('open');
     $('.row').toggleClass('open');
 });
-
-
-
-
-
-
-
-
+*/

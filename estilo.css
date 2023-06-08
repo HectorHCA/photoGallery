@@ -1,3 +1,18 @@
+
+
+
+
+html{
+
+
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+
 * {
 
   box-sizing: border-box;
@@ -14,6 +29,9 @@ body {
   border: 10px solid rgb(240, 240, 240);
   padding: 0;
   text-align: center;
+  background-color: white;
+  transform: background-color 1s;
+  box-sizing: border-box;
 
 
 
@@ -29,6 +47,112 @@ a {
 }
 
 
+/* TOGGLE PARA CAMBIAR EL MODO OSCURO*/
+
+
+
+
+.toggles{
+
+  transition:  opacity 0.6s;
+
+  
+
+}
+
+
+
+.camara{
+
+  height: 15px;
+  width: 15px;
+  animation: heartbeat 1s infinite;
+  top: 5px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 20px; 
+  width: 50px;
+
+
+
+}
+
+
+.corazon{
+
+  height: 56px;
+  width: 56px;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  width: 50px;
+  opacity: 70%;
+  animation: heartbeat 1s infinite;
+  padding: 5px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 70%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+
+
+
+
+
+#sun{
+
+
+    display: none;
+    color: white;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #imagenLogo {
 
@@ -38,35 +162,6 @@ a {
 
 }
 
-
-
-
-
-.submenu {
-
-  display: flex;
-  display: none;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  width: max-content;
-  border-radius: 1rem;
-  position: relative;
-  z-index: 1;
-  left: -210px;
-  animation: desplegar 1s ease forwards;
-  transform-origin: top;
-  /* Agrega la transformación del origen del submenu */
-
-
-  /*
-  transition: all 0.3s ease-in-out;
- */
-
-
-
-
-}
 
 
 
@@ -96,6 +191,28 @@ footer {
 
 
 }
+
+
+
+.footer-contacto{
+
+
+  position: absolute;
+  bottom: 0;;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
 .f2 {
 
@@ -169,7 +286,6 @@ img {
 }
 
 .row {
-
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 20px;
@@ -177,11 +293,44 @@ img {
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
-  animation-fill-mode: backwards;
+  animation-fill-mode:backwards;
   animation-delay: 1s;
-  transition: display 1s;
+  transition: transform 1s;
+  height: 100%; /* Agrega una altura fija al elemento .row */
 
 }
+
+.submenu {
+
+  display: none;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 0;
+  width: max-content;
+  border-radius: 1rem;
+  position: relative;
+  left: -210px;
+  animation: desplegar 1s ease forwards;
+  transform-origin: top;
+  
+  /* Agrega la transformación del origen del submenu */
+
+
+  /*
+  transition: all 0.3s ease-in-out;
+ */
+}
+
+
+
+.submenu.visible {
+  display: flex; /* Muestra el submenú cuando tiene la clase "visible" */
+  /* ...otras propiedades... */
+}
+
+
+
+
 
 
 
@@ -248,27 +397,44 @@ img {
 }
 
 
+@keyframes replegar {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+
+
+
 
 @keyframes desplegar {
-
-
   0% {
     opacity: 0;
-    transform: scaleY(0) translateY(-100%);
-    /* Agrega la transformación para desplegar desde arriba */
+    transform: translateY(-40%);
   }
 
 
-  50% {
 
 
-    transform: scaleY(1) translateY(20%);
-    /* Agrega la transformación para desplegar desde arriba */
 
 
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-
 }
+
 
 
 
@@ -415,6 +581,34 @@ img {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .listaMenuMoviles {
 
 
@@ -441,6 +635,7 @@ img {
   margin-left: 7%;
   margin-right: 7%;
   font-size: large;
+  font-size: 22px;
 
 
 
@@ -629,8 +824,6 @@ img {
 
 
 
-
-
 /*
   @font-face {
     font-family: nueva;
@@ -698,7 +891,7 @@ span {
   position: absolute;
   top: 10px;
   left: 20px;
-  height: 100px;
+  height: 120px;
   width: 130px;
 
 
@@ -877,6 +1070,7 @@ textarea {
   height: 50px;
   width: 50px;
   margin: 10px;
+  margin-top: 35px;
   color: gray;
   transition: opacity 0.4s;
 
@@ -909,8 +1103,16 @@ textarea {
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
 
-
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1084,6 +1286,40 @@ textarea {
 }
 
 
+
+
+
+
+.main-contacto{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: burlywood;
+  border: 2px solid lightgrey;
+
+}
+
+
+
+.correo{
+
+
+  font-weight: bold;
+  font-size: larger;
+
+
+
+
+
+
+
+}
+
+
 @media (max-width: 600px) {
 
 
@@ -1157,8 +1393,56 @@ textarea {
   }
 
 
+  .corazon{
+
+
+    height: 40px;
+    width: 40px;
+
+
+
+
+
+
+  }
+
+
+
+  .camara{
+
+
+
+    height: 10px;
+    width: 10px;
+    right: 35px;
+    top: 35px;
+
+
+
+
+
+  }
+
+
+  .imagenLogo{
+
+
+    height: 70px;
+    width: 80px;
+
+
+
+
+  }
+
+
 
 
 
 
 }
+
+
+
+
+

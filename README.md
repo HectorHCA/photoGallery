@@ -2,9 +2,9 @@
 
 
 
-Visit the web here: https://nerijuarez.netlify.app/
+This is a photo gallery. It is a minimalist and pleasant website.
 
-![Imagen del index](index.PNG)
 
+[![Imagen del index](index.PNG)](https://nerijuarez.netlify.app/)
 
 

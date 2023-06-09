@@ -4,7 +4,7 @@
 
 Visit the web here: https://nerijuarez.netlify.app/
 
-![Imagen del index](index.png)
+![Imagen del index](main/index.PNG)
 
 
 

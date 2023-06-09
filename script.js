@@ -194,3 +194,33 @@ $('.social').click(function () {
     $('.row').toggleClass('open');
 });
 */
+
+
+
+
+function siguiente() {
+
+    
+    var image = document.getElementById('fotoActual');
+    var rutaActual = image.src;
+    var numeroActual = parseInt(rutaActual.split('/').pop().split('.')[0]); // Extraemos el número actual de la ruta
+    var nuevaRuta = rutaActual.replace(numeroActual + '.jpg', (numeroActual + 1) + '.jpg'); // Construimos la nueva ruta sumando 1 al número actual
+    image.src = nuevaRuta;
+
+    
+
+
+  }
+
+  function anterior() {
+    var image = document.getElementById('fotoActual');
+    var rutaActual = image.src;
+    var numeroActual = parseInt(rutaActual.split('/').pop().split('.')[0]); // Extraemos el número actual de la ruta
+  
+    if (numeroActual <= 1) {
+      return; // Evitamos que el número actual sea menor o igual a 1
+    }
+  
+    var nuevaRuta = rutaActual.replace(numeroActual + '.jpg', (numeroActual - 1) + '.jpg'); // Construimos la nueva ruta restando 1 al número actual
+    image.src = nuevaRuta;
+  }

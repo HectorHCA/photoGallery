@@ -224,3 +224,25 @@ function siguiente() {
     var nuevaRuta = rutaActual.replace(numeroActual + '.jpg', (numeroActual - 1) + '.jpg'); // Construimos la nueva ruta restando 1 al número actual
     image.src = nuevaRuta;
   }
+
+
+
+
+
+
+    function redirectToIndex(pagina) {
+        window.location.href = pagina;
+      }
+
+
+      /*
+      function ocultarAlerta(){
+
+
+        document.getElementById("alertaHorizontal").style.display = "none";
+
+
+
+
+      }
+      */

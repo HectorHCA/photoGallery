@@ -138,13 +138,82 @@ function abrirSubmenu() {
   function cerrarSubMenu() {
     var submenu = document.getElementById('sub');
     var fotos = document.getElementById('fotos');
+
+    ocultarSubmenu();
     
   
     submenu.classList.remove('visible'); // Quita la clase "visible" para ocultar el submenú
     fotos.style.transform = "translateY(0)"; // Reinicia la posición del .row
 
   }
+
+
+  function toggleSubmenu() {
+    var submenu = document.getElementById('sub');
+    var fotos = document.getElementById('fotos');
   
+    if (submenu.classList.contains('visible')) {
+
+      cerrarSubMenu();
+      submenu.classList.remove('visible'); // Cierra el submenú si está abierto
+      fotos.style.transform = "translateY(0)"; // Reinicia la posición del .row
+      
+      
+    } else {
+
+
+
+      bajarSubmenu();
+      submenu.classList.add('visible'); // Abre el submenú si está cerrado
+      fotos.style.transform = "translateY(45px)"; // Desplaza el .row hacia abajo
+
+
+
+
+
+
+
+
+    }
+  }
+
+
+
+
+  function bajarSubmenu(){
+
+
+
+    let submenu = document.getElementById('sub');
+
+    submenu.style.transition = 'top 1s';
+    submenu.style.visibility = 'visible';
+    submenu.style.animation = 'desplegar 1s ease forwards';
+    submenu.style.top = '20px';
+
+  }
+
+
+  function ocultarSubmenu() {
+    var submenu = document.getElementById('sub');
+
+
+    if(submenu.style.visibility == 'visible'){
+        submenu.style.transition = 'top 1s';
+        submenu.style.animation = 'replegar 1s ease forwards';
+        submenu.style.top = '-50px';
+
+
+    }
+
+
+
+    
+
+  }
+  
+
+
 
 
 

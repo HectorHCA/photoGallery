@@ -1146,14 +1146,14 @@ textarea {
 
 @font-face {
   font-family: Zodiak;
-  src: url(fuentes/Zodiak_Complete/Fonts/Variable/Zodiak-Variable.ttf);
+  src: url(Zodiak-Variable.ttf);
 }
 
 
 
 @font-face {
   font-family: Alpino;
-  src: url(fuentes/Alpino_Complete/Fonts/Variable/Alpino-Variable.ttf);
+  src: url(Alpino-Variable.ttf);
 }
 
 

@@ -1394,7 +1394,6 @@ textarea {
 
 
 
-
 .container1 {
   display: flex;
 }
@@ -1427,11 +1426,17 @@ textarea {
 
 .image1>img{
 
-  border-radius: 1rem;
 
 
 }
 
+
+.hid{
+
+
+  display: none;
+
+}
 
 
 
@@ -1665,6 +1670,11 @@ textarea {
 @media (max-width: 600px) {
 
 
+
+
+
+
+
   .header1 {
 
     display: none;
@@ -1821,6 +1831,7 @@ textarea {
 
 }
 
+
 .text1{
 
   display: flex;
@@ -1837,7 +1848,6 @@ textarea {
 
 
 }
-
 
 
 .image1{
@@ -1901,8 +1911,10 @@ textarea {
 
 }
 
-
 .text1{
+
+
+  order: 2;
 
   display: flex;
   text-align:justify;
@@ -1922,13 +1934,14 @@ textarea {
 
 .image1{
 
-
+  order: 1;
   justify-content: center;
   align-items: center;
   margin-right: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   height: 60%;
   width: 60%;
+
 
 }
 
@@ -1938,3 +1951,4 @@ textarea {
 
 
 } 
+

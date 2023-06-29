@@ -1821,14 +1821,14 @@ textarea {
 
 }
 
-
 .text1{
 
   display: flex;
   text-align:justify;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 75%;
   margin-left: none;
 
 
@@ -1837,6 +1837,7 @@ textarea {
 
 
 }
+
 
 
 .image1{
@@ -1904,12 +1905,12 @@ textarea {
 .text1{
 
   display: flex;
+  text-align:justify;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: justify;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 75%;
   margin-left: none;
-  font-size: 15px;
 
 
 

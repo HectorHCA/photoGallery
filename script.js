@@ -57,72 +57,6 @@ function openOverlayV(imageUrl) {
 
 
 
-/*  ESTE SIVE PARA CERRAR EL OVERLAY SOLO EN CASO DE PULSAR EL BOTON DE CERRADO , EN EL RESTO DE CASOS NO SE CIERRA
-
-
-
-
-function openOverlayH(imageUrl) {
-    console.log("abriendo foto HORIZONTAL");
-    var overlay = document.getElementById('overlayH');
-    var overlayImage = document.getElementById('overlayImageH');
-    var closeButton = document.getElementById('closeButtonH');
-
-    overlayImage.onload = function () {
-        overlay.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
-
-    overlayImage.src = imageUrl;
-
-    closeButton.onclick = function (event) {
-        event.stopPropagation(); // Evita que el evento se propague a elementos padre
-        overlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
-function openOverlayV(imageUrl) {
-    console.log("abriendo foto VERTICAL");
-    var overlay = document.getElementById('overlayV');
-    var overlayImage = document.getElementById('overlayImageV');
-    var closeButton = document.getElementById('closeButtonV');
-
-    overlayImage.onload = function () {
-        overlay.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
-
-    overlayImage.src = imageUrl;
-
-    closeButton.onclick = function (event) {
-        event.stopPropagation(); // Evita que el evento se propague a elementos padre
-        overlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
-document.addEventListener('click', function (event) {
-    var overlayH = document.getElementById('overlayH');
-    var overlayV = document.getElementById('overlayV');
-
-    if (event.target !== overlayH && event.target !== overlayV) {
-        overlayH.style.display = 'none';
-        overlayV.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
-
-
-
-*/
-
-
-
-
-
-
-
 
 
 
@@ -315,3 +249,67 @@ function siguiente() {
 
       }
       */
+
+
+
+      function copiarCorreo(){
+
+
+        let correo = document.getElementById('correo');
+
+
+
+
+
+
+      }
+
+
+      function copiarTexto(event) {
+    
+
+        correoCopiado();
+
+        // Crear un elemento de textarea temporal
+        var textarea = document.createElement('textarea');
+        textarea.value = "nerijuarez@gmail.com";
+      
+
+
+        // Agregar el elemento al cuerpo del documento
+        document.body.appendChild(textarea);
+
+        // Seleccionar y copiar el contenido del textarea
+        textarea.select();
+        document.execCommand('copy');
+
+        // Eliminar el textarea temporal
+        document.body.removeChild(textarea);
+
+        // Mostrar la alerta flotante
+        var alerta = document.getElementById('alerta');
+        alerta.innerText = 'Correo copiado';
+        alerta.classList.add('mostrar');
+
+        // Ocultar la alerta después de 3 segundos
+        setTimeout(function() {
+            alerta.classList.remove('mostrar');
+        }, 1200);
+    }
+
+
+
+    function correoCopiado(){
+
+
+      let copiar = document.getElementById('copiar');
+
+
+      copiar.style.backgroundColor = 'grey';
+
+
+
+
+
+
+    }

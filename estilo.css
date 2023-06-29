@@ -880,6 +880,7 @@ img {
   cursor: pointer;
   transition: transform 0.5s ease;
   transition: opacity 0.5s, scale 0.5s, border-bottom 0.5s;
+  z-index: 9999;
 
 }
 
@@ -1172,6 +1173,18 @@ textarea {
 
 
 
+@font-face {
+  font-family: Futura;
+  src: url(fuentes/Futura/futura\ medium\ bt.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(fuentes/Avenir_Regular/Avenir_Regular.ttf);
+}
+
+
+
 
 
 .list {
@@ -1182,7 +1195,7 @@ textarea {
   text-align: center;
   align-items: center;
   font-size: large;
-  font-family: Zodiak;
+  font-family: Futura;
   font-weight: 500;
   gap: 25px;
   font-size: 22px;
@@ -1205,7 +1218,7 @@ textarea {
 
 .link {
 
-
+  
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -1221,8 +1234,10 @@ textarea {
 .linksub {
 
   
-  font-family: Alpino;
-  font-size: 20px;
+  font-family: Avenir;
+  font-weight: lighter;
+  font-size: 16px;
+  opacity: 0.7;
 
 
 
@@ -1377,21 +1392,75 @@ textarea {
 /* ESTILOS PAGINA DE CONTACTO */
 
 
-.main-contacto{
 
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-top: 10%;
+
+
+.container1 {
+  display: flex;
+}
+
+.container2 {
+  margin-top: -44px;
+}
+
+
+
+
+
+.text1 {
   
+  font-family: Avenir;
+  text-align:justify;
+  font-size: 13px;
+  margin-left: 50px;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image1 {
+  margin-left: 60px;
+  width: 34%;
+  height: 70%;
+  min-width: 20%;
+}
+
+.image1>img{
+
+  border-radius: 1rem;
+
 
 }
 
 
 
-.main-contacto>h1{
 
-  font-family: Zodiak;
+.main-contacto{
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+  
+
+}
+
+
+.principal{
+
+
+  position: absolute;
+
+  top: -50px;
+
+
+}
+
+
+
+.principal>h1{
+
+  font-family: Futura;
   border-bottom: 1px solid black;
   margin-top: 7%;
   margin-left: 10%;
@@ -1401,40 +1470,10 @@ textarea {
 }
 
 
-.parrafos{
+.bottom-contacto{
 
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  font-family: Alpino;
-  font-size: 18px;
-  font-weight: 400;
-
-
-}
-
-
-.left-contacto{
-
-  
-
-
-  flex: 2;
-  padding: 20px;
-  margin-left: 100px;
-
-
-}
-
-
-
-.right-contacto{
-
-  flex: 1;
-  margin-left: 10px;
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1460,10 +1499,14 @@ textarea {
 
 .icono{
 
- width: 50px;
- height: 50px;
+
+  height: 35px;
+  width: 35px;
+
+
  margin-bottom: 20px;
-transition: opacity 0.5s;
+ margin: 10px;
+ transition: opacity 0.5s;
 
 
 
@@ -1487,7 +1530,9 @@ transition: opacity 0.5s;
 
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+
 
 
 }
@@ -1495,22 +1540,104 @@ transition: opacity 0.5s;
 
 
 
+.cc-titulo{
 
-#correo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+
+
+}
+
+.contacto-titulo {
+
+  font-family: Futura;
+  width: 350px;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+
+
+.correo{
 
   font-family: Alpino;
-  background-color: rgb(185, 185, 185);
   font-size: 18px;
   padding: 5px;
   font-weight: 600;
+  transition: background-color 0.5s, color 0.5s, border 0.3s;
 
 
 
 }
 
 
+.correo:hover{
 
 
+  cursor: copy;
+
+
+
+
+}
+
+.alerta-flotante {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid black;
+  transition: opacity 0.3s ease-in-out;
+  font-family: Avenir;
+  opacity: 0;
+}
+
+.alerta-flotante.mostrar {
+  opacity: 1;
+}
+
+
+
+.alerta-flotante:hover{
+
+
+
+  cursor: default;
+}
+
+
+.fa-copy{
+
+  opacity: 0.85;
+  transition: opacity 0.2s, background-color 0.2s;
+  border: 2px solid black;
+  border-radius: 1cm;
+  padding: 7px;
+
+ 
+
+
+}
+
+
+.fa-copy:hover{
+
+
+  opacity: 1;
+ background-color: yellow;
+
+
+
+}
 
 
 
@@ -1655,25 +1782,80 @@ transition: opacity 0.5s;
     display: none;
   }
 
-  .icono{
-
-    height: 35px;
-    width: 35px;
 
 
+  
 
-
-  }
-
-
-  .left-contacto{
-
-    margin-left: 0;
+.iconos{
 
 
 
+  position: relative;
+  bottom: 20%;
 
-  }
+
+
+}
+
+
+.principal{
+
+  position: relative;
+  top: 10px;
+
+}
+
+
+.container1{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+
+
+}
+
+
+.text1{
+
+  display: flex;
+  text-align:justify;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-left: none;
+
+
+
+
+
+
+}
+
+
+.image1{
+
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  height: 50%;
+  width: 50%;
+
+}
+
+
+
+
+
+  
+
+
 
 
 
@@ -1685,4 +1867,65 @@ transition: opacity 0.5s;
 
 
 
+@media (max-width: 900px){
 
+
+
+
+.principal{
+
+  position: relative;
+  top: 10px;
+
+}
+
+
+.container1{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+
+
+}
+
+
+.text1{
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  margin-left: none;
+
+
+
+
+
+
+}
+
+
+.image1{
+
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  height: 50%;
+  width: 50%;
+
+}
+
+
+
+
+
+
+} 

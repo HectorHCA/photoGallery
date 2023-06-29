@@ -1175,12 +1175,12 @@ textarea {
 
 @font-face {
   font-family: Futura;
-  src: url(fuentes/Futura/futura\ medium\ bt.ttf);
+  src: url(fuentes/futura\ medium\ bt.ttf);
 }
 
 @font-face {
   font-family: Avenir;
-  src: url(fuentes/Avenir_Regular/Avenir_Regular.ttf);
+  src: url(fuentes/Avenir_Regular.ttf);
 }
 
 

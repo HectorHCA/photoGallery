@@ -1,6 +1,4 @@
-
-
-html{
+html {
 
 
   scroll-behavior: smooth;
@@ -29,7 +27,7 @@ body {
   background-color: white;
   transform: background-color 1s;
   box-sizing: 100%;
-  
+
 
 
 
@@ -50,17 +48,17 @@ a {
 
 
 
-.toggles{
+.toggles {
 
-  transition:  opacity 0.6s;
+  transition: opacity 0.6s;
 
-  
+
 
 }
 
 
 
-.camara{
+.camara {
 
   height: 15px;
   width: 15px;
@@ -69,7 +67,7 @@ a {
   display: flex;
   position: absolute;
   top: 40px;
-  right: 20px; 
+  right: 20px;
   width: 50px;
 
 
@@ -77,14 +75,14 @@ a {
 }
 
 
-.corazon{
+.corazon {
 
   height: 56px;
   width: 56px;
   display: flex;
   position: absolute;
   top: 20px;
-  right: 20px; 
+  right: 20px;
   width: 50px;
   opacity: 70%;
   animation: heartbeat 1s infinite;
@@ -109,10 +107,12 @@ a {
     transform: scale(1);
     opacity: 100%;
   }
+
   50% {
     transform: scale(1.2);
     opacity: 70%;
   }
+
   100% {
     transform: scale(1);
     opacity: 100%;
@@ -124,11 +124,11 @@ a {
 
 
 
-#sun{
+#sun {
 
 
-    display: none;
-    color: white;
+  display: none;
+  color: white;
 
 
 }
@@ -192,11 +192,12 @@ footer {
 
 
 
-.footer-contacto{
+.footer-contacto {
 
 
   position: absolute;
-  bottom: 0;;
+  bottom: 0;
+  ;
 
 
 
@@ -286,15 +287,16 @@ img {
 .row {
   margin-left: 7%;
   margin-right: 7%;
-  
+
   position: relative;
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
-  animation-fill-mode:backwards;
+  animation-fill-mode: backwards;
   animation-delay: 1s;
   transition: transform 1s;
-  height: 100%; /* Agrega una altura fija al elemento .row */
+  height: 100%;
+  /* Agrega una altura fija al elemento .row */
 
 }
 
@@ -328,20 +330,26 @@ img {
 
 .submenu ul {
   display: flex;
-  flex-direction: row; /* Cambiado a dirección horizontal */
-  justify-content: flex-start; /* Alineación hacia la izquierda */
-  padding: 0; /* Eliminado el relleno */
+  flex-direction: row;
+  /* Cambiado a dirección horizontal */
+  justify-content: flex-start;
+  /* Alineación hacia la izquierda */
+  padding: 0;
+  /* Eliminado el relleno */
 }
 
 .submenu li {
-  margin-right: 10px; /* Margen derecho para separar las pestañas */
-  list-style: none; /* Eliminado los estilos de viñetas */
+  margin-right: 10px;
+  /* Margen derecho para separar las pestañas */
+  list-style: none;
+  /* Eliminado los estilos de viñetas */
 }
 
 
 
 .submenu.visible {
-  display: flex; /* Muestra el submenú cuando tiene la clase "visible" */
+  display: flex;
+  /* Muestra el submenú cuando tiene la clase "visible" */
   /* ...otras propiedades... */
 }
 
@@ -422,71 +430,90 @@ img {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 0.1;
   }
+
   20% {
     opacity: 0.2;
   }
+
   30% {
     opacity: 0.3;
   }
+
   40% {
     opacity: 0.4;
   }
+
   50% {
     opacity: 0.5;
   }
+
   60% {
     opacity: 0.6;
   }
+
   70% {
     opacity: 0.7;
   }
+
   80% {
     opacity: 0.8;
   }
+
   90% {
     opacity: 0.9;
   }
- 
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes replegar {
   0% {
     opacity: 1;
   }
+
   10% {
     opacity: 0.5;
   }
+
   20% {
     opacity: 0.1;
   }
+
   30% {
     opacity: 0.0;
   }
+
   40% {
     opacity: 0.0;
   }
+
   50% {
     opacity: 0.0;
   }
+
   60% {
     opacity: 0.0;
   }
+
   70% {
     opacity: 0.0;
   }
+
   80% {
     opacity: 0;
   }
+
   90% {
     opacity: 0;
   }
- 
+
   100% {
     opacity: 0;
     visibility: hidden;
@@ -889,8 +916,8 @@ img {
 
 
   opacity: 0.5;
- 
-  
+
+
 
 
 
@@ -1218,7 +1245,7 @@ textarea {
 
 .link {
 
-  
+
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -1233,7 +1260,7 @@ textarea {
 
 .linksub {
 
-  
+
   font-family: Avenir;
   font-weight: lighter;
   font-size: 16px;
@@ -1407,9 +1434,9 @@ textarea {
 
 
 .text1 {
-  
+
   font-family: Avenir;
-  text-align:justify;
+  text-align: justify;
   font-size: 13px;
   margin-left: 50px;
   width: 50%;
@@ -1424,14 +1451,10 @@ textarea {
   min-width: 20%;
 }
 
-.image1>img{
+.image1>img {}
 
 
-
-}
-
-
-.hid{
+.hid {
 
 
   display: none;
@@ -1440,18 +1463,18 @@ textarea {
 
 
 
-.main-contacto{
+.main-contacto {
 
   justify-content: center;
   text-align: center;
   align-items: center;
-  
-  
+
+
 
 }
 
 
-.principal{
+.principal {
 
 
   position: absolute;
@@ -1463,19 +1486,19 @@ textarea {
 
 
 
-.principal>h1{
+.principal>h1 {
 
   font-family: Futura;
   border-bottom: 1px solid black;
   margin-top: 7%;
   margin-left: 10%;
   margin-right: 10%;
-  
-  
+
+
 }
 
 
-.bottom-contacto{
+.bottom-contacto {
 
   display: flex;
   flex-direction: row;
@@ -1492,7 +1515,7 @@ textarea {
 
 
 
-.logo-contacto{
+.logo-contacto {
   position: absolute;
   top: 10px;
   left: 20px;
@@ -1502,22 +1525,22 @@ textarea {
 }
 
 
-.icono{
+.icono {
 
 
   height: 35px;
   width: 35px;
 
 
- margin-bottom: 20px;
- margin: 10px;
- transition: opacity 0.5s;
+  margin-bottom: 20px;
+  margin: 10px;
+  transition: opacity 0.5s;
 
 
 
 }
 
-.icono:hover{
+.icono:hover {
 
 
   opacity: 0.5;
@@ -1531,7 +1554,7 @@ textarea {
 
 
 
-.iconos{
+.iconos {
 
 
   display: flex;
@@ -1547,7 +1570,7 @@ textarea {
 
 
 
-.cc-titulo{
+.cc-titulo {
 
   display: flex;
   flex-direction: row;
@@ -1569,7 +1592,7 @@ textarea {
 
 
 
-.correo{
+.correo {
 
   font-family: Alpino;
   font-size: 18px;
@@ -1582,7 +1605,7 @@ textarea {
 }
 
 
-.correo:hover{
+.correo:hover {
 
 
   cursor: copy;
@@ -1614,7 +1637,7 @@ textarea {
 
 
 
-.alerta-flotante:hover{
+.alerta-flotante:hover {
 
 
 
@@ -1622,7 +1645,7 @@ textarea {
 }
 
 
-.fa-copy{
+.fa-copy {
 
   opacity: 0.85;
   transition: opacity 0.2s, background-color 0.2s;
@@ -1630,17 +1653,17 @@ textarea {
   border-radius: 1cm;
   padding: 7px;
 
- 
+
 
 
 }
 
 
-.fa-copy:hover{
+.fa-copy:hover {
 
 
   opacity: 1;
- background-color: yellow;
+  background-color: yellow;
 
 
 
@@ -1745,7 +1768,7 @@ textarea {
   }
 
 
-  .corazon{
+  .corazon {
 
 
     height: 40px;
@@ -1760,7 +1783,7 @@ textarea {
 
 
 
-  .camara{
+  .camara {
 
 
 
@@ -1776,7 +1799,7 @@ textarea {
   }
 
 
-  .imagenLogo{
+  .imagenLogo {
 
 
     height: 80px;
@@ -1788,7 +1811,7 @@ textarea {
   }
 
 
-  .logo-contacto{
+  .logo-contacto {
 
 
     display: none;
@@ -1796,133 +1819,154 @@ textarea {
 
 
 
-  
-
-.iconos{
 
 
-
-  position: relative;
-  bottom: 20%;
+  .iconos {
 
 
 
-}
-
-
-.principal{
-
-  position: relative;
-  top: 10px;
-
-}
-
-
-.container1{
-
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+    position: relative;
+    bottom: 20%;
 
 
 
-}
+  }
 
 
-.text1{
+  .principal {
 
-  display: flex;
-  text-align:justify;
-  flex-direction: column;
-  margin-left: 1%;
-  margin-right: 1%;
-  width: 75%;
-  margin-left: none;
+    position: relative;
+    top: 10px;
+
+  }
 
 
+  .container1 {
 
 
-
-
-}
-
-
-.image1{
-
-
-  justify-content: center;
-  align-items: center;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  height: 50%;
-  width: 50%;
-
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
 
 
-
-.icono{
-
-
-  margin-bottom: none;
+  }
 
 
-}
+  .text1 {
+
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 75%;
+    margin-left: none;
 
 
 
 
 
 
+  }
 
 
-}
+  .image1 {
+
+
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    height: 50%;
+    width: 50%;
+
+  }
 
 
 
 
-@media (max-width: 900px){
+  .icono {
+
+
+    margin-bottom: none;
+
+
+  }
 
 
 
 
-.principal{
 
-  position: relative;
-  top: 10px;
-
-}
-
-
-.container1{
-
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 
 
 
 }
 
-.text1{
 
 
-  order: 2;
 
-  display: flex;
-  text-align:justify;
-  flex-direction: column;
-  margin-left: 1%;
-  margin-right: 1%;
-  width: 75%;
-  margin-left: none;
+@media (max-width: 900px) {
+
+
+
+
+  .principal {
+
+    position: relative;
+    top: 10px;
+
+  }
+
+
+  .container1 {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+
+  }
+
+  .text1 {
+
+
+    order: 2;
+
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 75%;
+    margin-left: none;
+
+
+
+
+
+
+  }
+
+
+  .image1 {
+
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    height: 60%;
+    width: 60%;
+
+
+  }
 
 
 
@@ -1930,25 +1974,3 @@ textarea {
 
 
 }
-
-
-.image1{
-
-  order: 1;
-  justify-content: center;
-  align-items: center;
-  margin-right: 50px;
-  margin-bottom: 10px;
-  height: 60%;
-  width: 60%;
-
-
-}
-
-
-
-
-
-
-} 
-

@@ -880,7 +880,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 60%;
-  max-height: 70%;
+  max-height: 75%;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -1560,7 +1560,7 @@ textarea {
   display: flex;
   flex-direction: row;
   position: relative;
-  top: -15px;
+  top: -45px;
 
 
 
@@ -1648,7 +1648,7 @@ textarea {
 .fa-copy {
 
   opacity: 0.85;
-  transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   border: 2px solid black;
   border-radius: 1cm;
   padding: 7px;
@@ -1661,13 +1661,49 @@ textarea {
 
 .fa-copy:hover {
 
-
-  opacity: 1;
-  background-color: yellow;
+  
 
 
+  transform: rotate(90deg);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
+
+
+.copy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button::before {
+  content: "\f0c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.copy-button.copied {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.copy-button.copied::before {
+  content: "\f00c";
+}
+
+.copy-button:hover {
+  background-color: #ddd;
+}
+
+
+
 
 
 

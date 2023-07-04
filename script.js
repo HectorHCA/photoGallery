@@ -1,5 +1,15 @@
 
 
+
+
+function volverPaginaAnterior() {
+  window.history.back();
+}
+
+
+
+
+
 function openOverlayH(imageUrl) {
 
   console.log("abriendo foto HORIZONTAL");
@@ -324,3 +334,6 @@ const button = document.querySelector('.copy-button');
 button.addEventListener('click', function() {
   button.classList.add('copied');
 });
+
+
+

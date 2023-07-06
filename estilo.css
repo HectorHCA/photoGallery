@@ -13,11 +13,23 @@ html {
 
   box-sizing: border-box;
 
-  /*
-    scrollbar-color: white black;
-    scrollbar-width:auto;
-    */
+  
+    scrollbar-color: rgb(0, 0, 0) rgb(255, 255, 255);
+    scrollbar-width: auto;
+  
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 body {
 
@@ -27,6 +39,7 @@ body {
   background-color: white;
   transform: background-color 1s;
   box-sizing: 100%;
+
 
 
 
@@ -982,8 +995,8 @@ span {
 
 .logo {
 
-  height: 140px;
-  width: 170px;
+  height: 110px;
+  width: 140px;
   margin-bottom: 20px;
   position: relative;
 

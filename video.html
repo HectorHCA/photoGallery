@@ -1,0 +1,207 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+    <link rel="stylesheet" href="estilo.css" async>
+    <script src="script.js"></script>
+
+
+    <style>
+
+
+.hh{
+
+
+    color: white;
+
+}
+        
+
+.hh-min{
+
+
+    color: white;
+    opacity: 1;
+
+}
+
+
+
+.link::before,
+.link::after {
+
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.40s;
+
+
+}
+
+
+
+.link::before {
+
+  top: -3px;
+
+
+
+
+}
+
+
+
+
+
+.link::after {
+
+  bottom: -3px;
+
+  transform-origin: right;
+
+
+
+
+}
+
+
+.link:hover {
+
+
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+
+
+  transform: scaleX(1);
+
+
+
+
+}
+
+
+.linksub:hover::before {
+  transform: scaleX(0);
+  /* Oculta la línea de arriba al hacer hover */
+
+}
+
+.linksub:hover::after {
+  transform: scaleX(1);
+  /* Muestra la línea de debajo al hacer hover */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body class="cuerpo">
+
+
+
+
+    <div id="video-container">
+        <video id="video-background" autoplay muted loop>
+          <source src="fotos/video.mp4" type="video/mp4">
+          Tu navegador no admite la etiqueta de video.
+        </video>
+        <div id="content">
+
+            <header>
+
+                <div class="teknofilos">
+                    <a class="logo" href="index.html"><img alt="logo" src="fotos/NeriJuárezFotografíaBlack.png"></a>
+        
+        
+        
+        
+        
+                </div>
+        
+        
+                <ul class="listaMenuMoviles">
+                    <li class="submovil subvideo " onclick="abrirSubmenuSocial()">Social</li>
+                    <ul class="listaMenuMoviles" id="submenuSocial">
+                        <li class="subsub">Boda</li>
+                        <li class="subsub ">Comunión</li>
+                        <li class="subsub ">Bautizo</li>
+                        <li class="subsub ">Familia</li>
+                    </ul>
+                    <li class="submovil" onclick="cerrarSubmenuSocial()">Gastronomía</li>
+                    <li class="submovil" onclick="cerrarSubmenuSocial()"><a href="video.html">Vídeo</a></li>
+                    <li class="submovil" onclick="cerrarSubmenuSocial()"><a href="contacto.html">Sobre mí</a></li>
+                </ul>
+        
+        
+        
+        
+        
+                <nav>
+                    <ul class="list">
+                        <li class="link hh" onclick="toggleSubmenu()"><a href="#">Social</a></li>
+                        <li class="link hh" onclick="cerrarSubMenu()"><a href="#">Gastronomía</a></li>
+                        <li class="link hh" onclick="cerrarSubMenu()"><a href="video.html">Vídeo</a></li>
+                        <li class="link hh" onclick="cerrarSubMenu()"><a href="contacto.html">Sobre mí</a></li>
+                    </ul>
+                </nav>
+        
+        
+        
+                <nav class="submenu" id="sub">
+                    <ul class="lista">
+                        <li>
+                            <a class="link linksub hh-min" href="paginas/boda.html">Boda</a>
+                        </li>
+                        <li>
+                            <a class="link linksub hh-min" href="#">Bautizo</a>
+                        </li>
+                        <li>
+                            <a class="link linksub hh-min" href="#">Comunión</a>
+                        </li>
+                        <li>
+                            <a class="link linksub hh-min" href="#">Familia</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            </header>
+        
+        </div>
+      </div>
+    
+</body>
+</html>

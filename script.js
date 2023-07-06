@@ -2,6 +2,11 @@
 
 
 
+
+
+
+
+
 function volverPaginaAnterior() {
   window.history.back();
 }
@@ -64,6 +69,11 @@ function openOverlayV(imageUrl) {
     document.body.style.overflow = 'auto';
   }
 }
+
+
+
+
+
 
 
 
@@ -325,15 +335,6 @@ function correoCopiado() {
 }
 
 
-
-
-
-
-const button = document.querySelector('.copy-button');
-
-button.addEventListener('click', function() {
-  button.classList.add('copied');
-});
 
 
 

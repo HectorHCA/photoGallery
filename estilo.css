@@ -725,6 +725,7 @@ img {
   margin-right: 7%;
   font-size: large;
   font-size: 22px;
+  font-family: Futura;
 
 
 
@@ -770,7 +771,8 @@ img {
   border-radius: 1em;
   transition: background-color 0.5s, opacity 0.5s;
   animation: desplegar 0.8s ease;
-
+  font-family: Avenir;
+  
 
 
 
@@ -937,7 +939,7 @@ img {
 
 .m {
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Futura;
   font-size: large;
 
   text-decoration: none;
@@ -1451,7 +1453,7 @@ textarea {
   min-width: 20%;
 }
 
-.image1>img {}
+
 
 
 .hid {

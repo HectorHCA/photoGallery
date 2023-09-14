@@ -125,6 +125,31 @@
 }
 
 
+#marcarVideo{
+
+    padding: 3px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+
+
+
+}
+
+
+#marcarAbajoVideo{
+
+
+    
+  padding: none;
+  border-bottom: 2px solid white;
+
+
+
+
+}
+
+
 
 
 
@@ -143,15 +168,38 @@
     <div id="video-container">
 
 
-        <video id="video-background" autoplay muted loop playsinline>
-            <source src="fotos/videoComprimido.mp4" type="video/mp4">
+
+        <video id="video-background" autoplay muted loop playsinline preload="metadata">
+            <source src="fotos/Videorr.mp4" type="video/mp4">
             Tu navegador no admite la etiqueta de video.
         </video>
-          
+
+
+
+        
+   
 
 
 
         <!--
+
+            SEGUNDA OPCIÓN
+        
+        <video id="video-background" autoplay muted loop playsinline>
+            <source src="fotos/videoComprimido.mp4" type="video/mp4">
+            Tu navegador no admite la etiqueta de video.
+        </video>
+
+        -->
+          
+
+
+
+        <!--    
+
+            PRIMERA OPCIÓN
+
+
         <video id="video-background" autoplay muted loop>
           <source src="fotos/videoComprimido.mp4" type="video/mp4">
           Tu navegador no admite la etiqueta de video.
@@ -175,15 +223,17 @@
         
         
                 <ul class="listaMenuMoviles">
-                    <li class="submovil subvideo" onclick="abrirSubmenuSocial()">Social</li>
+                    <li class="submovil subvideo" onclick="abrirSubmenuSocial()"><a href="social.html">Social</a></li>
+                    <!--
                     <ul class="listaMenuMoviles" id="submenuSocial">
                         <li class="subsub subvideo">Boda</li>
                         <li class="subsub subvideo">Comunión</li>
                         <li class="subsub subvideo">Bautizo</li>
                         <li class="subsub subvideo">Familia</li>
                     </ul>
+                    -->
                     <li class="submovil subvideo" onclick="cerrarSubmenuSocial()">Gastronomía</li>
-                    <li class="submovil subvideo" onclick="cerrarSubmenuSocial()"><a href="video.html">Vídeo</a></li>
+                    <li class="submovil subvideo" onclick="cerrarSubmenuSocial()"><a href="video.html" id="marcarAbajoVideo">Vídeo</a></li>
                     <li class="submovil subvideo" onclick="cerrarSubmenuSocial()"><a href="contacto.html">Sobre mí</a></li>
                 </ul>
         
@@ -193,15 +243,15 @@
         
                 <nav>
                     <ul class="list">
-                        <li class="link hh" onclick="toggleSubmenu()"><a href="#">Social</a></li>
-                        <li class="link hh" onclick="cerrarSubMenu()"><a href="#">Gastronomía</a></li>
-                        <li class="link hh" onclick="cerrarSubMenu()"><a href="video.html">Vídeo</a></li>
+                        <li class="link hh" onclick="toggleSubmenu()"><a href="social.html">Social</a></li>
+                        <li class="link hh" onclick="cerrarSubMenu()"><a href="gastronomia.html">Gastronomía</a></li>
+                        <li class="hh" id="marcarVideo" onclick="cerrarSubMenu()"><a href="video.html">Vídeo</a></li>
                         <li class="link hh" onclick="cerrarSubMenu()"><a href="contacto.html">Sobre mí</a></li>
                     </ul>
                 </nav>
         
         
-        
+                <!--
                 <nav class="submenu" id="sub">
                     <ul class="lista">
                         <li>
@@ -218,10 +268,17 @@
                         </li>
                     </ul>
                 </nav>
+            --> 
+
+                
+  
         
             </header>
         
         </div>
+
+
+          
       </div>
     
 </body>
